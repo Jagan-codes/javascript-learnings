@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pj1</title>
+</head>
+<body>
+    <h1 class="op">
+    STUDENT FORM
+    </h1>
+    <br>
+
+    <div  id="div1">
+    <center>
+        <form>
+        <table border="1" class="po">
+            <tr><th class="dab">Name</th><td><input id="si"></td></tr>
+            <tr><th class="dab">Age</th><td><input id="si2"></td></tr>
+            <tr><th class="dab">Gender</th><td id="si3"><input type="radio"name="gender">Male<input type="radio"name="gender">Female</td></tr>
+            <tr><th class="dab">Course</th><td><select id="si4" style="width:170px"><option>Javascript</option><option>python</option><option>java</option><option>c++</option><option>css</option><option>html</option></select></td></tr>
+            <tr><th class="dab">E-mail</th><td><input type="email" id="si5"></td></tr>
+            <td class="yu2"><button class="yu" onclick="change()" >Save</button></td>
+        </table>
+    </form>
+</div >
+    <br>
+   <div>
+    <center>
+    <table border="1" id="tr" >
+        <tr><th>NAME</th><th>AGE</th><th>COURSE</th><th>GENDER</th><th style="width: 150px;">EMAIL</th><th>ACTION</th></tr>
+    </table>
+   </div>
+</center>
+    
+    
+    
+</body>
+</html>
+<style>
+.op{
+    text-align: center;
+}
+.po{
+    flex-direction: row;
+    justify-content: center;
+    padding: 7px;
+    text-align: center;
+    
+}
+.yu{
+    text-align: center;
+    
+    background-color: aqua;
+    color: black;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    cursor: pointer;
+    
+   
+    
+   
+}
+
+#div1{
+    text-align: center;
+    flex-basis: 100%;
+    
+  
+    
+}
+
+.dab{
+    width: 50px;
+}
+.ji{
+    display: block;
+ 
+    flex-basis: 100%;
+    width: 100%;
+
+}
+.ram{
+    display: flex;
+
+}
+
+</style>
+<script>
+    var a=document.getElementById("si")
+    var b=document.getElementById("si1")
+    var c=document.getElementById("si3")
+    var d=document.getElementById("si4")
+    var e=document.getElementById("si5")
+    var f=document.getElementById("tr")
+    function change(){
+    
+    
+        var raju=document.createElement("tr")
+        raju.innerHTML=a.value+b.value+e.value+"<button style='background-color:red'>DELETE</button>"
+        f.append(r)
+
+
+        
+    }
+
+</script>
+
+    
